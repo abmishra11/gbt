@@ -62,26 +62,160 @@ body {
 
 .products-container-black {
   background-color: #000;
-  padding: 20px 40px;
+  padding-top: 30px;
+  padding-left: 100px;
+  padding-right: 80px;
+}
+
+.products-header-black {
+  text-align: center;
+  background-color: #b7e2fe;
+  padding: 5px 0px;
+  width: 300px;
+  margin-top: 30px;
+  margin-bottom: -10px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.product-card {
+  width: 250px;
+  margin-bottom: 30px;
+  background-color: #fff;
+  overflow: hidden;
+  box-shadow: 0 -10px 15px rgba(255, 255, 255, 0.1),
+    0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.product-card img {
+  width: 250px;
+  height: 250px;
 }
 
 .products-container-white {
   background-color: #fff;
-  padding: 20px 40px;
+  padding-top: 30px;
+  padding-left: 100px;
+  padding-right: 80px;
 }
 
-.product-card {
-  padding: 20px 30px;
+.products-header-white {
+  text-align: center;
+  background-color: #b7e2fe;
+  padding: 5px 0px;
+  width: 300px;
+  margin-top: 30px;
+  margin-bottom: -10px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .product-card-white {
-  padding: 20px 30px;
-  border: 4px solid #000;
+  width: 250px;
   margin-bottom: 20px;
+  background-color: #fff;
+  border: 4px solid #000;
+
+  overflow: hidden;
+  box-shadow: 0 -10px 15px rgba(255, 255, 255, 0.1),
+    0 10px 30px rgba(0, 0, 0, 0);
+  transition: transform 0.3s ease;
 }
 
 .product-card-white img {
+  width: 250px;
   height: 250px;
 }
 
 /***** Product Section End *****/
+
+/***** Duty Section Start *****/
+.duty-list li {
+  position: relative;
+  padding-left: 25px;
+  list-style-type: none;
+}
+
+.duty-list li::before {
+  content: "➤"; /* Unicode for the right arrow (→) */
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-size: 20px; /* Adjust size if needed */
+  color: #000; /* Customize arrow color */
+}
+
+.duty-footer {
+  padding: 40px;
+  background-color: #000;
+}
+
+.duty-footer h1 {
+  color: #fff;
+  position: relative;
+}
+
+.duty-footer h1::before {
+  content: "❝"; /* Opening quote */
+  font-size: 60px;
+  position: absolute;
+  top: -10px;
+  left: -30px;
+  color: #fff;
+}
+
+.duty-footer h1::after {
+  content: "❞"; /* Closing quote */
+  font-size: 60px;
+  position: absolute;
+  bottom: -10px;
+  color: #fff;
+}
+/***** Duty Section End *****/
+
+/***** Contact Section Start *****/
+.contact-header {
+  height: 700px;
+  background-image: url("../images/slider-3.jpg");
+  background-size: cover; /* Change to cover for better fit */
+  background-position: center;
+}
+
+.contact-card-row {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  min-height: 700px;
+}
+
+.contact-card {
+  background-color: #fff;
+  padding: 20px;
+  margin-left: 80px;
+  box-shadow: 0 -10px 15px rgba(255, 255, 255, 0.1),
+    0 10px 30px rgba(0, 0, 0, 0);
+}
+
+.contact-form-header {
+  height: 700px;
+  margin-top: 20px;
+  background-image: url("../images/slider-4.jpg");
+  background-size: cover; /* Change to cover for better fit */
+  background-position: center;
+}
+
+.contact-form-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 700px;
+}
+
+.contact-form {
+  width: 50%;
+  background-color: #fff;
+  padding: 80px;
+  box-shadow: 0 -10px 15px rgba(255, 255, 255, 0.1),
+    0 10px 30px rgba(0, 0, 0, 0);
+}
+/***** Contact Section End *****/
