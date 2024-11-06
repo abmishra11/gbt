@@ -16,6 +16,14 @@ body {
   margin-left: 50px;
 }
 
+.nav-link .active {
+  color: #000;
+}
+
+.nav-link {
+  color: #000 !important;
+}
+
 .navbar-nav .nav-link {
   font-size: 24px;
   margin-bottom: -10px;
