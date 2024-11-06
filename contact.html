@@ -64,49 +64,51 @@
     <!-- Slider Section -->
     <section>
       <div class="container">
-        <div class="contact-header">
-          <div class="contact-card-row">
-            <div class="contact-card">
-              <div class="text-center">
-                <h1>CONTACT US</h1>
-              </div>
-              <div>
-                <div class="d-inline-flex align-items-center contact-details">
-                  <!-- <i
-                    class="fa fa-map-marker me-4 contact-icons"
-                    aria-hidden="true"
-                  ></i> -->
-                  <img
-                    src="includes/images/location-icon.png"
-                    alt=""
-                    class="contact-icons"
-                  />
-                  <p>
-                    Carrer de Pallar 193 Space Building, Office 317 Barcelona –
-                    08005
-                  </p>
+        <div class="row">
+          <div class="contact-header">
+            <div class="contact-card-row">
+              <div class="contact-card">
+                <div class="text-center">
+                  <h1>CONTACT US</h1>
                 </div>
-              </div>
-              <div>
-                <div class="d-inline-flex align-items-center contact-details">
-                  <!-- <i class="fas fa-phone me-4 contact-icons"></i> -->
-                  <img
-                    src="includes/images/phone-icon.png"
-                    alt=""
-                    class="contact-icons"
-                    height="30"
-                  />
-                  <p>Tel: +34 691 475 297</p>
+                <div>
+                  <div class="d-inline-flex align-items-center contact-details">
+                    <!-- <i
+                      class="fa fa-map-marker me-4 contact-icons"
+                      aria-hidden="true"
+                    ></i> -->
+                    <img
+                      src="includes/images/location-icon.png"
+                      alt=""
+                      class="contact-icons"
+                    />
+                    <p>
+                      Carrer de Pallar 193 Space Building, Office 317 Barcelona –
+                      08005
+                    </p>
+                  </div>
                 </div>
-              </div>
-              <div>
-                <div class="d-inline-flex align-items-center contact-details">
-                  <img
-                    src="includes/images/email-icon.png"
-                    alt=""
-                    class="contact-icons"
-                  />
-                  <p>Email: sales@globalbeveragetrdaers.co</p>
+                <div>
+                  <div class="d-inline-flex align-items-center contact-details">
+                    <!-- <i class="fas fa-phone me-4 contact-icons"></i> -->
+                    <img
+                      src="includes/images/phone-icon.png"
+                      alt=""
+                      class="contact-icons"
+                      height="30"
+                    />
+                    <p>Tel: +34 691 475 297</p>
+                  </div>
+                </div>
+                <div>
+                  <div class="d-inline-flex align-items-center contact-details">
+                    <img
+                      src="includes/images/email-icon.png"
+                      alt=""
+                      class="contact-icons"
+                    />
+                    <p>Email: sales@globalbeveragetrdaers.co</p>
+                  </div>
                 </div>
               </div>
             </div>
@@ -116,67 +118,77 @@
     </section>
     <section>
       <div class="container">
-        <div class="contact-form-header">
-          <div class="contact-form-row">
-            <div class="contact-form">
-              <div class="contact-form-heading">
-                <h1>Drop a Query</h1>
+        <div class="row">
+          <div class="contact-map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2992.739956990758!2d2.195003274797637!3d41.40145339512452!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a4a33d95aa2701%3A0x15a5f401bad43c0f!2sCarrer%20de%20Pallars%2C%20193%2C%20Sant%20Mart%C3%AD%2C%2008005%20Barcelona%2C%20Spain!5e0!3m2!1sen!2sin!4v1730891926326!5m2!1sen!2sin" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="container">
+        <div class="row">
+          <div class="contact-form-header">
+            <div class="contact-form-row">
+              <div class="contact-form">
+                <div class="contact-form-heading">
+                  <h1>Drop a Query</h1>
+                </div>
+                <form action="submit_contact.php" method="post">
+                  <div class="mb-3">
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="company"
+                      name="company"
+                      required
+                      placeholder="Your Company"
+                    />
+                  </div>
+                  <div class="mb-3">
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="name"
+                      name="name"
+                      required
+                      placeholder="Your Name"
+                    />
+                  </div>
+                  <div class="mb-3">
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="email"
+                      name="email"
+                      required
+                      placeholder="Your Email"
+                    />
+                  </div>
+                  <div class="mb-3">
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="number"
+                      name="number"
+                      required
+                      placeholder="Contact Number"
+                    />
+                  </div>
+                  <div class="mb-3">
+                    <textarea name="" id="" class="form-control"></textarea>
+                  </div>
+                  <div class="text-center">
+                    <button type="submit">Submit</button>
+                  </div>
+                </form>
               </div>
-              <form action="submit_contact.php" method="post">
-                <div class="mb-3">
-                  <input
-                    type="text"
-                    class="form-control"
-                    id="company"
-                    name="company"
-                    required
-                    placeholder="Your Company"
-                  />
-                </div>
-                <div class="mb-3">
-                  <input
-                    type="text"
-                    class="form-control"
-                    id="name"
-                    name="name"
-                    required
-                    placeholder="Your Name"
-                  />
-                </div>
-                <div class="mb-3">
-                  <input
-                    type="text"
-                    class="form-control"
-                    id="email"
-                    name="email"
-                    required
-                    placeholder="Your Email"
-                  />
-                </div>
-                <div class="mb-3">
-                  <input
-                    type="text"
-                    class="form-control"
-                    id="number"
-                    name="number"
-                    required
-                    placeholder="Contact Number"
-                  />
-                </div>
-                <div class="mb-3">
-                  <textarea name="" id="" class="form-control"></textarea>
-                </div>
-                <div class="text-center">
-                  <button type="submit">Submit</button>
-                </div>
-              </form>
             </div>
           </div>
         </div>
       </div>
     </section>
   </body>
-
   <footer>
     <div class="container" id="footer-section-container">
       <div class="row">
@@ -194,11 +206,11 @@
 
           <!-- Contact Info Section -->
           <div class="text-start">
-            <h2 class="mb-3">Contact Us</h2>
-            <p class="mb-1">Trading Address: Carrer de Pallar 193</p>
-            <p class="mb-1">Space Building, Office 317 Barcelona – 08005</p>
-            <p class="mb-1">Tel: +34 691 475 297</p>
-            <p>
+            <h2 class="mb-3 fw-bold">Contact Us</h2>
+            <p class="mb-1 fw-bold">Trading Address: Carrer de Pallar 193</p>
+            <p class="mb-1 fw-bold">Space Building, Office 317 Barcelona – 08005</p>
+            <p class="mb-1 fw-bold">Tel: +34 691 475 297</p>
+            <p class="fw-bold">
               Email:
               <a href="mailto:sales@globalbeveragetraders.co"
                 >sales@globalbeveragetraders.co</a
@@ -207,10 +219,10 @@
 
             <!-- <i class="fa-brands fa-instagram me-2" style="font-size: 38px"></i
             ><i class="fa-brands fa-facebook" style="font-size: 38px"></i> -->
-            <div>
+            <!-- <div>
               <img src="includes/images/facebook-icon.png" alt="" />
               <img src="includes/images/instagram-icon.png" alt="" />
-            </div>
+            </div> -->
           </div>
         </div>
       </div>
